@@ -1,3 +1,4 @@
+
 %-------------------------
 % Author : Işın Altınkaya
 % Website: https://github.com/isinaltinkaya/cv
@@ -233,4 +234,5 @@ Atheist Alliance International Foundation Scholarship, \textit{2016} \\
 
 
 %-------------------------------------------
-\end{document}
+\end{document}      {Intern, Advisor: Dr. Tunca Doğan}{October 2019 - Ongoing}
+

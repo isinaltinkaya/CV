@@ -106,31 +106,23 @@ English \textit{(Fluent, Hacettepe University Erasmus Exam Score: 94.5/100)}
 \section{Research Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Biological Data Analysis Lab}{Hacettepe University, Computer Science}
-      {Intern, Advisor: Dr. Tunca Do\u{g}an}{October 2019 - Ongoing}
-      \resumeItemListStart
-        \resumeItem{Bioinformatics}
-          {Gene ontology network modelling and prediction with population genetics approach.}
-    \resumeItemListEnd
-    
-    \resumeSubheading
-      {Fumagalli Lab}{Imperial College London, Life Sciences}
-      {Intern, Advisor: Dr. Matteo Fumagalli}{July 2019 - Ongoing}
+      {Fumagalli Lab}{Imperial College London}
+      {Intern, Advisor: Dr. Matteo Fumagalli}{July 2019 - September 2019}
       \resumeItemListStart
         \resumeItem{Bioinformatics}
           {Developing HMMploidy and ANGSDgui.}
     \resumeItemListEnd
     
     \resumeSubheading
-      {Biogeography Research Laboratory}{Hacettepe University, Biology}
+      {Biogeography Research Laboratory}{Hacettepe University}
       {Intern, Advisor: Dr. Bar{\i}\c{s} \"{O}z\"{u}do\u{g}ru}{February 2019 - present}
       \resumeItemListStart
         \resumeItem{Genomic \& Phylogenomic Analyses}
-          {Using plant genomic data (RADSeq).}
+          {Using plant genomic data, RADSeq.}
     \resumeItemListEnd
       
     \resumeSubheading
-      {Laboratory of Comperative \& Evolutionary Biology}{METU, Molecular Biology and Genetics}
+      {Laboratory of Comperative \& Evolutionary Biology}{Middle East Technical University}
       {Intern, Advisor: Dr. Mehmet Somel}{August 2018 - June 2019}
       \resumeItemListStart
         \resumeItem{Genomic Data Analyses}
@@ -138,7 +130,7 @@ English \textit{(Fluent, Hacettepe University Erasmus Exam Score: 94.5/100)}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Laboratory of Evolutionary \& Quantitative Genetics}{Hacettepe University, Biology}
+      {Laboratory of Evolutionary \& Quantitative Genetics}{Hacettepe University}
       {Intern, Advisor: Dr. Ergi Deniz \"{O}zsoy}{October 2015 - February 2019}
       \resumeItemListStart
         \resumeItem{Biostatistics \& Quantitative Genetics}
@@ -156,7 +148,7 @@ For more information on my programming skills and experiences please refer to my
 
 %-----------SELECTED COURSES-----------------
 \section{Selected Courses (Attended)}
-Fundamentals of Bioinformatics, Department of Computer Science, Hacettepe University, Lecturer: Dr. Tunca Do\u{g}an,  2019 \\
+Fundamentals of Bioinformatics, BBM411, Department of Computer Science, Hacettepe University, Lecturer: Dr. Tunca Do\u{g}an,  2019-ongoing \\
 Population Genetics, Middle East Technical University, Lecturer: Dr. Mehmet Somel, 2018 \\
 Population Genetics Simulations with R, Middle East Technical University, 2018 \\
 Introduction to Game Theory, Anadolu University, 2017 \\
@@ -179,7 +171,6 @@ Tree of Evolution Bornova Anatolian High School Evolution Workshop (2012) \texti
 %-----------TEACHING EXPERIENCE------------
 \section{Teaching Experience}
 Statistics with R - Private course (2019) \\
-Biometry with R - Teaching Assistantship (2019) \\
 Introductory Evolutionary Biology, Science and Utopia Evolution Courses (2017) \\
 Introductory Evolutionary Biology, Hacettepe University Evolution Workshops (2016) \\
 
@@ -216,9 +207,7 @@ Ecology and Evolutionary Biology Society of Turkey, \textit{2017 - present} \\
 
 %-----------SCHOLARSHIPS & AWARDS---------------
 \section{Scholarships \& Awards}
-Hacktoberfest award for contributing to open source projects, \textit{2019} \\
 Erasmus+ Traineeship Grant, Imperial College London, \textit{July 2019 - September 2019} \\
-Hacktoberfest award for contributing to open source projects, \textit{2018} \\
 Atheist Alliance International Foundation Scholarship, \textit{2017} \\
 Atheist Alliance International Foundation Scholarship, \textit{2016} \\
 
