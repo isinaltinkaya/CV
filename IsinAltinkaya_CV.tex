@@ -4,8 +4,7 @@
 % Website: https://github.com/isinaltinkaya/cv
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
-
+\documentclass[letterpaper,10.5pt]{article}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -30,8 +29,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-4pt}\scshape\raggedright\large 
+}{}{1em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 % Custom commands
 \newcommand{\resumeItem}[2]{
@@ -40,28 +39,31 @@
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[5]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{3pt} \\
+    #5
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-\renewcommand{\labelitemii}{$\circ$}
+%\renewcommand{\labelitemii}{$\circ$}
+%\renewcommand{\labelitemii}{$\rightarrow$}
+
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-\newcommand\textline[4][t]{%
-  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{\raggedright\texttt#2}%
-  \parbox[#1]{.333\textwidth}{\centering#3}%
-  \parbox[#1]{.333\textwidth}{\raggedleft\texttt{#4}}\par\smallskip%
-}
+%
+%\newcommand\textline[4][t]{%
+%  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{\raggedright\texttt#2}%
+%  \parbox[#1]{.333\textwidth}{\centering#3}%
+%  \parbox[#1]{.333\textwidth}{\raggedleft\texttt{#4}}\par\smallskip%
+%}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%
@@ -83,124 +85,187 @@
 %\section{Personal}
 %\textbf{Date of Birth:} 15 October 1996
  
+ 
+%-----------LANGUAGE-----------------
+\section{Language}
+Turkish \textit{(Native)} \\
+English \textit{(Fluent)} \\
+\quad \small TOEFL iBT: 102/120 (Reading: Advanced, Listening: Advanced, Speaking: High-Intermediate, Writing: Advanced) \\
+German \textit{(Beginner)} \\
+Danish \textit{(Beginner)} 
+
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {BSc in Biology} {Hacettepe University, Ankara, Turkey}
-      {Faculty of Science, Department of Biology} {2015 - 2020}
-  
-      
+      {Faculty of Science, Department of Biology} {Date of Graduation: 06.07.2020}
+    \quad GPA: 3.23, \quad Certificate No: 20-321-032
   \resumeSubHeadingListEnd
-    \smallskip
-    \quad GPA: 3.23, \quad Date of Graduation: 06.07.2020, \quad Certificate No: 20-321-032
 
-%-----------LANGUAGE-----------------
-\section{Language}
-Turkish \textit{(Native)} \\
-English \textit{(Fluent)} \\
-\quad TOEFL iBT: 102, Reading: Advanced, Listening: Advanced, Speaking: High-Intermediate, Writing: Advanced \\
-Danish \textit{(Beginner)}
+
+
+
+
 
 %-----------RESARCH EXPERIENCE-----------------
 \section{Research Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Biological Data Analysis Lab}{Hacettepe University, Computer Science}
-      {Intern, Advisor: Dr. Tunca Do\u{g}an}{October 2019 - present}
-      
-    \resumeSubheading
-      {Fumagalli Lab}{Imperial College London, Life Sciences}
-      {Intern, Advisor: Dr. Matteo Fumagalli}{July 2019 - September 2019}
-     
-    \resumeSubheading
-      {Biogeography Research Laboratory}{Hacettepe University, Biology}
-      {Intern, Advisor: Dr. Bar{\i}\c{s} \"{O}z\"{u}do\u{g}ru}{February 2019 - present}
-     
-    \resumeSubheading
-      {Laboratory of Comparative \& Evolutionary Biology}{Middle East Technical University}
-      {Intern, Advisor: Dr. Mehmet Somel}{August 2018 - June 2019}
-      
 
     \resumeSubheading
-      {Laboratory of Evolutionary \& Quantitative Genetics}{Hacettepe University, Biology}
-      {Intern, Advisor: Dr. Ergi Deniz \"{O}zsoy}{October 2015 - February 2019}
-      
+      {GLOBE Institute, Section for GeoGenetics}{University of Copenhagen, Denmark}
+      {Research assistant, Advisor: Thorfinn Sand Korneliussen and Rasmus Nielsen}{2020/10 - ongoing}
+      {I contributed to the development and evaluation of the Lundbeck projects bioinformatic pipeline. I contributed in a number of independent projects which resulted in one publication (submitted) and contributed to 4 ongoing projects.}
+    \medskip
+    
+    
+    \resumeSubheading
+      {Fumagalli Lab}{Imperial College London, United Kingdom}
+      {Intern, Advisor: Matteo Fumagalli}{2019/7 - 2019/9}
+      {I contributed to the HMMPloidy project by implementing various functions such as the genotype likelihood calculation for any given N-ploidy value, which resulted in a publication available as preprint.}
+    \medskip
+
+
+    \resumeSubheading
+      {Biogeography Research Laboratory}{Hacettepe University, Turkey}
+      {Intern, Advisor: Bar{\i}\c{s} \"{O}z\"{u}do\u{g}ru}{2019/2 - 2020/7}
+      {I developed a bioinformatic pipeline for the preprocessing, alignment, postprocessing and the phylogenomic analyses of RADSeq data, which I have used to carry out analyses which resulted in a manuscript in preparation.}
+    \medskip
+ 
+    \resumeSubheading
+      {Laboratory of Comparative and Evolutionary Biology}{Middle East Technical University, Turkey}
+      {Intern, Advisor: Mehmet Somel}{2018/8 - 2019/6}
+      {I carried out analyses to evaluate the effect of probe sequences' GC content on the performance of the 1240K SNP capture method.}
+
+    \medskip
+
+
+    \resumeSubheading
+      {Laboratory of Evolutionary and Quantitative Genetics}{Hacettepe University, Turkey}
+      {Intern, Advisor: Ergi Deniz \"{O}zsoy}{2015/10 - 2019/2}
+      {I contributed to the statistical analyses of quantitative genetics projects based on Drosophila Genetic Reference Panel 2 data, which resulted in a poster presentation and acknowledgement in MSc and PhD theses.}
   \resumeSubHeadingListEnd
+  
+
 
 %--------SKILLS------------
 \section{Skills}
-\textbf{Programming languages}: Python, R, Bash, JavaScript, C/C++, Perl \\
-\textbf{Markup languages}: \LaTeX, HTML\&CSS \\
-\textbf{Operating systems}: GNU/Linux  \\
+\textbf{Programming languages}: C/C++, R, Python, Bash, Perl, Java, JavaScript \\
+\textbf{Markup languages}: \LaTeX, Markdown, HTML\&CSS \\
+\textbf{Operating systems}: GNU/Linux \\
+\textbf{Other tools and frameworks}: Git, RShiny, Django, Conda, Snakemake \\
 For more information on my programming skills and experiences please refer to my \href {https://github.com/isinaltinkaya}{GitHub} profile.
 
 %-----------SELECTED COURSES-----------------
-\section{Selected Courses (Attended)}
-Stay-at-Home RevBayes Workshop, Instructors: Joëlle Barido-Sottani, Walker Pett, Josh Justison, Wade Dismukes, Luiza Fabreti, Tracy Heath, Jeremy M. Brown, Rosana Zenil-Ferguson, \textit{2020-ongoing} \\
-Fundamentals of Bioinformatics, Department of Computer Science, Hacettepe University, Lecturer: Dr. Tunca Do\u{g}an,  \textit{2019} \\
-Population Genetics, Department of Molecular Biology and Genetics, Middle East Technical University, Lecturer: Dr. Mehmet Somel, \textit{2018} \\
-Population Genetics Simulations with R, Middle East Technical University, \textit{2018} \\
-Introduction to Game Theory, Anadolu University, \textit{2017} \\
-Evolutionary Genomics Winter School, Hacettepe University, \textit{2017} 
+\section{Relevant Courses}
+\textbf{Advanced Topics in Data Analysis}, University of Copenhagen, \textit{2021} \\
+\textbf{Fundamentals in Computational Analysis of Large-Scale Datasets}, University of Copenhagen, \textit{2021} \\
+\textbf{Stay-at-Home RevBayes Workshop}, Topics: Tree inference from molecular data, evaluating MCMC performance, assessing model adequacy and macroevolutionary analyses, \textit{2020} \\
+\textbf{Fundamentals of Bioinformatics}, Department of Computer Science, Hacettepe University, Lecturer: Tunca Do\u{g}an,  \textit{2019} \\
+\textbf{Population Genetics}, Graduate course, Department of Molecular Biology and Genetics, Middle East Technical University, Lecturer: Mehmet Somel, \textit{2018} \\
+\textbf{Population Genetics Simulations with R}, Middle East Technical University, \textit{2018} \\
+\textbf{Introduction to Game Theory}, Anadolu University, \textit{2017} \\
+\textbf{Evolutionary Genomics Winter School}, Hacettepe University, \textit{2017} 
 
 %-----------PRESENTATIONS-----------------
 \section{Presentations}
-{\textit{Biological Evolution}}, Science and Future Magazine Science for Youth Seminar,  \textit{2018} \\
-{\textit{Evolutionary Perspectives on Ecological Problems}}, Turkey Meets Evolution: Bilkent University,  \textit{2016} \\
-{\textit{Using Evolutionary Biology to Prevent the Extinction of
-Species}}, 7th National Environment and Ecology Student Congress,  \textit{2016}
+{\textit{"Biological Evolution"}}, Science and Future Magazine Science for Youth Seminar,  \textit{2018} \\
+{\textit{"Evolutionary Perspectives on Ecological Problems"}}, Turkey Meets Evolution: Bilkent University,  \textit{2016} \\
+{\textit{"Evolutionary Biology and Preventing the Species Extinction"}}, 7th National Environment and Ecology Student Congress,  \textit{2016}
+
+%-----------POSTER PRESENTATIONS-----------------
+\section{Poster Presentations}
+Damla Aygün, \textbf{Isin Altinkaya}, Murat Y{\i}lmaz, Ergi Deniz \"{O}zsoy, Efe Sezgin. "Host genetics of microbiota diversity in \textit{Drosophila melanogaster}". \textit{Ecology and Evolutionary Biology Symposium}, Turkey, 2018 \\
+%i analysed Drosophila melanogaster microbial dataset to test the diversity using various diversity indices using R package named vegan
+
+%----------- PUBLICATIONS------------
+\section{Publications}
+\textbf{PREPRINTS} \\
+\medskip
+
+Samuele Soraggi, Johanna Rhodes, \textbf{Isin Altinkaya}, Oliver Tarrant, François Balloux, Matthew C. Fisher, Matteo Fumagalli. HMMploidy: inference of ploidy levels from short-read sequencing data. \href{https://www.biorxiv.org/content/10.1101/2021.06.29.450340v1}{bioRxiv}, https://doi.org/10.1101/2021.06.29.450340 \\
+\medskip
+
+\textbf{SUBMITTED} \\
+\medskip
+
+
+Alex Mas-Sandoval, Nathaniel S. Pope, Knud Nor Nielsen, \textbf{Isin Altinkaya}, Matteo Fumagalli, and Thorfinn Sand Korneliussen. Fast and accurate estimation of multidimensional site frequency spectra from low-coverage high-throughput sequencing data.  \\
+
+\medskip
+
+\textbf{MANUSCRIPTS IN PREPARATION} \\
+\medskip
+
+
+\textbf{Isin Altinkaya}, Thorfinn Sand Korneliussen, Gabriel Renaud, Karyokan: Bayesian inference of karyotype for low coverage data. \\
+
+
+\textbf{Isin Altinkaya}, Ismail Kudret Saglam, Bar{\i}\c{s} \"{O}z\"{u}do\u{g}ru, Understanding the phylogenetic relationships within the Noccaea species complex from RADseq data using the multi species coalescent. \\
+
+\medskip
+
+Following are the ongoing projects I contributed and will be a coauthor once the publication is ready;
+\medskip
+
+Morten Erik Allentoft et al. Human demography in Europe through the Mesolithic and Neolithic ages. \\ 
+
+
+Hugh McColl, José Victor Moreno Mayar, \textbf{Isin Altinkaya}, Thorfinn Sand Korneliussen, Accurate and precise library complexity estimations for ancient DNA libraries using patterned flowcell technology. \\
+
+Fulya Eylem Yediay et al., Population genomics of Bronze Age Mediterranean. \\
+
+Benchmarking the performance of state-of-art HLA typing tools with simulated ancient DNA data \\
 
 %-----------SELECTED SYMPOSIUM AND EVENTS------------
-\section{Selected Symposium and Events}
-12th Aykut Kence Evolution Conference (as Organizer), \textit{2018} \\
-Turkey Meets Evolution: Izmir (as Organizer), \textit{2012} \\
-Tree of Evolution Bornova Anatolian High School Evolution Workshop (as Organizer), \textit{2012} \\
-
-%-----------TEACHING EXPERIENCE------------
-\section{Teaching Experience}
-Introduction to Computational Biology and Bioinformatics Workshop \href{https://github.com/isinaltinkaya/Hesaplamali_Biyoloji_ve_Biyoinformatige_Giris_2020}{(GitHub repository of workshop)}, \textit{2020}\\
-Statistics with R - Private course, \textit{2019} \\
-Biometry Class (using R), Hacettepe University - Teaching Assistantship, \textit{2019} \\
-Introductory Evolutionary Biology, Science and Utopia Evolution Courses, \textit{2017} \\
-Introductory Evolutionary Biology, Hacettepe University Evolution Workshops, \textit{2016} \\
-
-
+%\section{Other Academic Achievements, Honors, and Activities}
+\section{Scientific Outreach, Public Engagement and Activities}
+12th Aykut Kence Evolution Conference, Organizer, \textit{2018} \\
+Turkey Meets Evolution: Izmir, Organizer, \textit{2012} \\
+Tree of Evolution Bornova Anatolian High School Evolution Workshop, Organizer, \textit{2012} \\
+Science and Utopia Magazine, Popular science writer, Subject: Evolutionary biology, June 2017 - May 2018 \\
+Popular Science Magazine, Translator, February 2016 - May 2016 \\
+\href{https://evrimagaci.org/isinaltinkaya/}{Tree of Evolution}, Writer and editor; Subject: Evolutionary biology, November 2015 - present \\
+\medskip
 %-----------POPULAR PUBLICATIONS------------
-\section{Popular Publications (In Turkish)}
+%\section{Popular Science Publications (In Turkish)}
+\textbf{POPULAR SCIENCE PUBLICATIONS} \\
 Science and Utopia Magazine, Issue: 283, Examining the Thin Line Between Living and Non-Living Matter, with Dr. Martin Hanczyc \\
 Science and Utopia Magazine, Issue: 278, Education and Perceptions: Evolution in Turkey \\
 Atheist Magazine, Issue: 16, The Evolving Brain \\
 Atheist Magazine, Issue: 14, Evolutionary Perspectives on LGBTI+ \\
-Atheist Magazine, Issue: 13, Understanding Evolution via Human Body \\
+Atheist Magazine, Issue: 13, Understanding Evolution through the Human Body \\
 Atheist Magazine, Issue: 12, Atheist Thinking under the Light of Evolution \\
-Popular science articles at Evrim A\u{g}ac{\i} (Tree of Evolution) can be found  \href{https://evrimagaci.org/isinaltinkaya/}{clicking here}. 
+Popular science articles at the Evrim A\u{g}ac{\i} (Tree of Evolution) platform can be found at  \href{https://evrimagaci.org/isinaltinkaya/}{evrimagaci.org/isinaltinkaya}. 
 
-%-----------WRITING experience-----------------
-\section{Writing Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Science and Utopia Magazine}{ }
-      {Popular science writer, Subject: Evolutionary Biology}{June 2017 - May 2018}
-    \resumeSubheading
-      {Popular Science (Turkey)}{ }
-      {Translator}{February 2016 - May 2016}
-    \resumeSubheading
-      {\href{https://evrimagaci.org/isinaltinkaya/}{Tree of Evolution}}{}
-      {Writer, Editor; Subject: Evolutionary Biology}{November 2015 - present}
-  \resumeSubHeadingListEnd
+
+
+
+%-----------TEACHING EXPERIENCE------------
+
+\section{Teaching Experience}
+"Advanced Bioinformatics for Next-Generation Sequencing 2021", MSc course, University of Copenhagen, Teaching Assistant, \textit{2021} \\
+"Introduction to Computational Biology and Bioinformatics Workshop", Hacettepe University, Teaching Assistant, \textit{2020} \\
+%Statistics with R - Private course, \textit{2019} \\
+"Biometry", 4th year elective course, Hacettepe University, Teaching Assistant, \textit{2019} \\
+%I worked as a teaching assistant and contributed by preparing exercises and teaching the basics of statistical analyses and visualization using R 
+"Introductory Evolutionary Biology", Science and Utopia Evolution Courses, Lecturer,  \textit{2017} \\
+"Introduction to Evolution", Hacettepe University Evolution Workshops, Lecturer, \textit{2016} \\
 
 
 %-----------SCHOLARSHIPS & AWARDS---------------
 \section{Scholarships \& Awards}
 Erasmus+ Traineeship Grant, Imperial College London, \textit{2019} \\
-Hacktoberfest award for contributing to open source projects, \textit{2018 and 2019} \\
-Atheist Alliance International Foundation Scholarship, \textit{2016 and 2017} \\
-
+Hacktoberfest Award, for contributing to open source projects, \textit{2018 and 2019} \\
+Atheist Alliance International Foundation Scholarship, for students in underdeveloped countries, \textit{2016 and 2017} \\
 
 %-----------SOCIETY MEMBERSHIPS-----------------
-\section{Society Memberships}	
+%Society Memberships
+\section{Professional Memberships \& Affiliations}	
+Society for the Study of Evolution, \textit{2021 - present} \\
+Free Software Foundation, \textit{2020 - present} \\
 Ecology and Evolutionary Biology Society of Turkey, \textit{2017 - present} \\
+
 
 
 \end{document}  
