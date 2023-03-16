@@ -12,10 +12,26 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+\usepackage{xcolor}
+\usepackage[pdftex]{hyperref}
+
+\hypersetup{
+    colorlinks = true,
+    linkcolor = MidnightBlue,
+    anchorcolor = blue,
+    citecolor = blue,
+    filecolor = blue,
+    urlcolor = BlueViolet
+}
+
+    
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
@@ -72,12 +88,11 @@
 
 %----------HEADING-----------------
 
-\href{mailto:isinaltinkaya@gmail.com}{isinaltinkaya@gmail.com}
-\hfill \begin{Huge}I\c{s}{\i}n Alt{\i}nkaya \end{Huge} \\
-%\href{http://www.isinaltinkaya.com/}{isinaltinkaya.com}
-\href{http://isinaltinkaya.com/}{isinaltinkaya.com}
-\hfill \textit{Curriculum Vitae} \\
-\href {https://github.com/isinaltinkaya}{GitHub/isinaltinkaya} \\
+\href{http://isinaltinkaya.com/}{isinaltinkaya.com} \hfill \begin{Huge}I\c{s}{\i}n Alt{\i}nkaya \end{Huge} \\
+\href {https://github.com/isinaltinkaya}{github/isinaltinkaya} \hfill Oester Voldgade 5-7 1350 \\
+\href {https://twitter.com/isinaltinkaya}{twitter/isinaltinkaya}  \hfill Copenhagen K, Denmark \\
+\href{mailto:isinaltinkaya@gmail.com}{isinaltinkaya@gmail.com} $\sbullet[.5]$ \href{mailto:isin.altinkaya@sund.ku.dk}{isin.altinkaya@sund.ku.dk} \hfill (+45) 501-186-79 \\
+
 
 
 %-----------PERSONAL-----------------
@@ -87,23 +102,22 @@
  
 %-----------LANGUAGE-----------------
 \section{Language}
-Turkish \textit{(Native)} \\
-English \textit{(Fluent)} \\
-\quad \small TOEFL iBT: 102/120 (Reading: Advanced, Listening: Advanced, Speaking: High-Intermediate, Writing: Advanced) \\
-German \textit{(Beginner)} \\
-Danish \textit{(Beginner)} 
+Turkish \textit{(Native)} \hfill English \textit{(Fluent)} \hfill German \textit{(Beginner)} \hfill Danish \textit{(Beginner)} 
+
+%\quad \small TOEFL iBT: 102/120 (Reading: Advanced, Listening: Advanced, Speaking: High-Intermediate, Writing: Advanced) \\
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {PhD} {University of Copenhagen, Denmark}
-      {Faculty of Health and Medical Sciences} {01.01.2022 - ongoing}
-    \quad Supervised by Thorfinn S. Korneliussen and Rasmus Nielsen
+      {Faculty of Health and Medical Sciences} {2022/1 - expected in 2025/1}
+    \quad \textbf{Title:} Statistical methods for population genetic inference based on low-depth sequencing data \\
+    \quad \textbf{Advisors:} Thorfinn S. Korneliussen and Rasmus Nielsen
     \resumeSubheading
       {BSc in Biology} {Hacettepe University, Ankara, Turkey}
-      {Faculty of Science, Department of Biology} {Date of Graduation: 06.07.2020}
-    \quad GPA: 3.23, \quad Certificate No: 20-321-032
+      {Faculty of Science, Department of Biology} {2020/7}
+%    \quad GPA: 3.23, \quad Certificate No: 20-321-032
   \resumeSubHeadingListEnd
 
 
@@ -116,152 +130,229 @@ Danish \textit{(Beginner)}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {GLOBE Institute, Section for GeoGenetics}{University of Copenhagen, Denmark}
-      {Research assistant, Advisor: Thorfinn S. Korneliussen and Rasmus Nielsen}{2020/10 - 2021/12}
-      {I contributed to the development and evaluation of the Lundbeck projects' bioinformatic pipeline. I contributed in a number of independent projects which resulted in 2 publications and contributed to 3 ongoing projects.}
+      {Globe Institute, Section for GeoGenetics}{University of Copenhagen, Denmark}
+      {Research assistant, Advisors: Thorfinn S. Korneliussen and Rasmus Nielsen}{2020/10 - 2021/12}
+      {Contributed to a number of independent projects which resulted in 2 publications and 3 manuscripts in preparation. Worked on the development and evaluation of the Lundbeck center bioinformatics pipeline processing thousands of ancient genomes. }
     \medskip
     
     
     \resumeSubheading
       {Fumagalli Lab}{Imperial College London, United Kingdom}
       {Intern, Advisor: Matteo Fumagalli}{2019/7 - 2019/9}
-      {I contributed to the HMMPloidy project by implementing various functions such as the genotype likelihood calculation for any given N-ploidy value, which resulted in a publication available as preprint.}
+      {Contributed to the HMMPloidy project by implementing various methods, including the genotype likelihood estimation for any N-ploidy, which resulted in a publication. Funded by Erasmus+ Traineeship Grant.}
     \medskip
 
 
     \resumeSubheading
       {Biogeography Research Laboratory}{Hacettepe University, Turkey}
       {Intern, Advisor: Bar{\i}\c{s} \"{O}z\"{u}do\u{g}ru}{2019/2 - 2020/7}
-      {I developed a bioinformatic pipeline for the preprocessing, alignment, postprocessing and the phylogenomic analyses of RADSeq data, which I have used to carry out analyses which resulted in a manuscript in preparation.}
+      {Developed a snakemake-based bioinformatic pipeline for the processing and phylogenomic analyses of RADSeq data, which resulted in a manuscript in preparation.}
     \medskip
  
     \resumeSubheading
       {Laboratory of Comparative and Evolutionary Biology}{Middle East Technical University, Turkey}
       {Intern, Advisor: Mehmet Somel}{2018/8 - 2019/6}
-      {I carried out analyses to evaluate the effect of the properties of probe sequences, such as GC content, on the performance of the 1240K SNP capture method.}
+      {Carried out analyses to evaluate the effects of the properties of probe sequences in the 1240K SNP capture method.}
 
     \medskip
 
 
     \resumeSubheading
       {Laboratory of Evolutionary and Quantitative Genetics}{Hacettepe University, Turkey}
-      {Intern, Advisor: Ergi Deniz \"{O}zsoy}{2015/10 - 2019/2}
-      {I contributed to the statistical analyses of quantitative genetics projects based on Drosophila Genetic Reference Panel 2 data, which resulted in a poster presentation and acknowledgement in MSc and PhD theses.}
+      {Intern, Advisor: Ergi Deniz \"{O}zsoy}{2015/10 - 2018/12}
+      {Contributed to the statistical analyses of quantitative genetics projects based on Drosophila Genetic Reference Panel 2 (DGRP2) data, which resulted in a poster presentation and acknowledgments in two MSc and one PhD thesis.}
   \resumeSubHeadingListEnd
   
 
-
-%--------SKILLS------------
-\section{Skills}
-\textbf{Programming languages}: C/C++, Rust, R, Python, Bash, Perl, Java, JavaScript \\
-\textbf{Markup languages}: \LaTeX, Markdown, HTML\&CSS \\
-\textbf{Operating systems}: GNU/Linux \\
-\textbf{Other tools and frameworks}: Git, Conda, Snakemake, RShiny, Dash, Django \\
-
-
-%-----------SELECTED COURSES-----------------
-\section{Relevant Courses}
-\textbf{Computational Statistics}, University of Copenhagen, Department of Mathematical Sciences, \textit{2022} \\
-\textbf{Advanced Topics in Data Analysis}, University of Copenhagen, \textit{2021} \\
-\textbf{Fundamentals in Computational Analysis of Large-Scale Datasets}, University of Copenhagen, \textit{2021} \\
-\textbf{Stay-at-Home RevBayes Workshop}, Topics: Tree inference from molecular data, evaluating MCMC performance, assessing model adequacy and macroevolutionary analyses, \textit{2020} \\
-\textbf{Fundamentals of Bioinformatics}, Department of Computer Science, Hacettepe University, Lecturer: Tunca Do\u{g}an,  \textit{2019} \\
-\textbf{Population Genetics}, Graduate course, Department of Molecular Biology and Genetics, Middle East Technical University, Lecturer: Mehmet Somel, \textit{2018} \\
-\textbf{Population Genetics Simulations with R}, Middle East Technical University, \textit{2018} \\
-\textbf{Introduction to Game Theory}, Anadolu University, \textit{2017} \\
-\textbf{Evolutionary Genomics Winter School}, Hacettepe University, \textit{2017}  \\
-
-%-----------PRESENTATIONS-----------------
-\section{Presentations}
-{\textit{"A Genotype Likelihood Framework for the Analysis of Molecular Variance (AMOVA)"}}, Evolution and Population Genetics in Denmark (EPIC) Conference,  \textit{2022} \\
-{\textit{"Evolutionary Biology and Preventing the Species Extinction"}}, 7th National Environment and Ecology Student Congress,  \textit{2016} \\
-{\textit{"Biological Evolution"}}, Science and Future Magazine Science for Youth Seminar,  \textit{2018} \\
-{\textit{"Evolutionary Perspectives on Ecological Problems"}}, Turkey Meets Evolution: Bilkent University,  \textit{2016} \\
-{\textit{"Evolutionary Biology and Preventing the Species Extinction"}}, 7th National Environment and Ecology Student Congress,  \textit{2016} \\
-
-%-----------POSTER PRESENTATIONS-----------------
-\section{Poster Presentations}
-Damla Aygün, \textbf{Isin Altinkaya}, Murat Y{\i}lmaz, Ergi Deniz \"{O}zsoy, Efe Sezgin. "Host genetics of microbiota diversity in \textit{Drosophila melanogaster}". \textit{Ecology and Evolutionary Biology Symposium}, Turkey, 2018 \\
-%i analysed Drosophila melanogaster microbial dataset to test the diversity using various diversity indices using R package named vegan
 
 %----------- PUBLICATIONS------------
 \section{Publications}
 
 
+\textbf{[2]} \hspace{0.42cm} Alex Mas-Sandoval, Nathaniel S. Pope, Knud Nor Nielsen, \textbf{Isin Altinkaya}, Matteo Fumagalli, and Thorfinn Sand Korneliussen. \href{https://doi.org/10.1093/gigascience/giac032}{Fast and accurate estimation of multidimensional site frequency spectra from low-coverage high-throughput sequencing data.} \textit{GigaScience} (2022).
 
-Alex Mas-Sandoval, Nathaniel S. Pope, Knud Nor Nielsen, \textbf{Isin Altinkaya}, Matteo Fumagalli, and Thorfinn Sand Korneliussen. Fast and accurate estimation of multidimensional site frequency spectra from low-coverage high-throughput sequencing data. \href{https://doi.org/10.1093/gigascience/giac032}{GigaScience}  \\
+\smallskip
+
+
+\textbf{[1]} \hspace{0.42cm} Samuele Soraggi, Johanna Rhodes, \textbf{Isin Altinkaya}, Oliver Tarrant, François Balloux, Matthew C. Fisher, Matteo Fumagalli. \href{https://doi.org/10.24072/pcjournal.178}{HMMploidy: inference of ploidy levels from short-read sequencing data.} \textit{Peer Community Journal} (2022).\\
+\medskip
+
+\hspace{0.2cm} \textbf{Preprints} \\
+\medskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Morten E. Allentoft [et al, including \textbf{Isin Altinkaya}.]  \href{https://www.biorxiv.org/content/10.1101/2022.05.04.490594v5}{Population Genomics of Stone Age Eurasia}, \textit{bioRxiv}, (2022).\\
 
 \medskip
 
-
-Samuele Soraggi, Johanna Rhodes, \textbf{Isin Altinkaya}, Oliver Tarrant, François Balloux, Matthew C. Fisher, Matteo Fumagalli. HMMploidy: inference of ploidy levels from short-read sequencing data. \href{https://doi.org/10.24072/pcjournal.178}{Peer Community Journal}, https://doi.org/10.1101/2021.06.29.450340 \\
-\medskip
-
-\textbf{Preprints} \\
-\medskip
-
-Morten E. Allentoft [et al, including \textbf{Isin Altinkaya}.] (2022) Population Genomics of Stone Age Eurasia, \href{https://www.biorxiv.org/content/10.1101/2022.05.04.490594v5}{bioRxiv}, https://doi.org/10.1101/2022.05.04.490594  \\
-
-\medskip
-
-\textbf{Manuscripts in preparation} \\
+\hspace{0.2cm} \textbf{Manuscripts in preparation} \\
 \medskip
 
 
-\textbf{Isin Altinkaya}, Ismail Kudret Saglam, Bar{\i}\c{s} \"{O}z\"{u}do\u{g}ru. Understanding the phylogenetic relationships within the Noccaea species complex from RADseq data using the multi-species coalescent. \\
+$\sbullet[.6]$ \hspace{0.74cm}  \textbf{Isin Altinkaya}, Emrullah Y{\i}lmaz, Ismail Kudret Saglam, Bar{\i}\c{s} \"{O}z\"{u}do\u{g}ru. Understanding the phylogenetic relationships within the Noccaea species complex from RADseq data using the multi-species coalescent. \\
 
+\smallskip
+$\sbullet[.6]$ \hspace{0.74cm}  \textbf{Isin Altinkaya}, Lei Zhao, Rasmus Nielsen, Thorfinn S. Korneliussen. A Genotype Likelihood Framework for Analysis of Molecular Variance (AMOVA) with Low Depth Sequencing Data. \\
+
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Hugh McColl, Jos\'e Victor Moreno Mayar, \textbf{Isin Altinkaya}, Thorfinn Sand Korneliussen, Accurate and precise library complexity estimations for ancient DNA libraries using patterned flowcell technology. \\
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Fulya E. Yediay [et al, including \textbf{Isin Altinkaya}.]  Population genomics of Bronze Age Mediterranean. \\
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Hugh McColl [et al, including \textbf{Isin Altinkaya}.]  Population genomics of Iron Age. \\
+
+
+
+%--------SKILLS------------
+\section{Skills}
+\textbf{Programming languages}: C/C++, R, Python, Java, Perl, Rust \\
+\textbf{Scripting and typesetting}: \LaTeX, Markdown, HTML\&CSS, JavaScript, Google Apps Script, sed, awk, Bash \\
+\textbf{Operating systems}: GNU/Linux \\
+\textbf{Other tools and frameworks}: Git, Conda, Snakemake, RShiny, Dash, Django, Make \\
+
+
+% %-----------SELECTED COURSES-----------------
+% \section{Relevant Courses}
+
+% \textbf{Computational Statistics}, University of Copenhagen, Department of Mathematical Sciences, (2022) \\
+% \textbf{Advanced Topics in Data Analysis}, University of Copenhagen, (2021) \\
+% \textbf{Fundamentals in Computational Analysis of Large-Scale Datasets}, University of Copenhagen, (2021) \\
+% \textbf{Stay-at-Home RevBayes Workshop}, Topics: Tree inference from molecular data, evaluating MCMC performance, assessing model adequacy and macroevolutionary analyses, (2020) \\
+% \textbf{Fundamentals of Bioinformatics}, Department of Computer Science, Hacettepe University, Lect.: Tunca Do\u{g}an, (2019) \\
+% \textbf{Population Genetics}, Graduate course, Department of Molecular Biology and Genetics, Middle East Technical University, Lect.: Mehmet Somel, (2018) \\
+% \textbf{Population Genetics Simulations with R}, Middle East Technical University, (2018) \\
+% \textbf{Introduction to Game Theory}, Anadolu University, (2017) \\
+% \textbf{Evolutionary Genomics Winter School}, Hacettepe University, (2017) \\
+
+
+%-----------PRESENTATIONS-----------------
+\section{Conferences, Workshops, and Talks}
+\textbf{[5]} \hspace{0.42cm} {A Genotype Likelihood Framework for the Analysis of Molecular Variance (AMOVA)}, \textit{Evolution and Population Genetics in Denmark (EPIC) Conference}, Denmark, (2022). \\
+\smallskip
+\textbf{[4]} \hspace{0.42cm} {Evolutionary Biology and Preventing the Species Extinction}, \textit{7th National Environment and Ecology Student Congress}, Turkey, (2016). \\
+\smallskip
+\textbf{[3]} \hspace{0.42cm} {Biological Evolution}, \textit{Science and Future Magazine Science for Youth Seminar}, Turkey, (2018). \\
+\smallskip
+\textbf{[2]} \hspace{0.42cm} {Evolutionary Biology and Environmental Problems}, \textit{Turkey Meets Evolution: Bilkent University}, Turkey, (2016). \\
+\smallskip
+\textbf{[1]} \hspace{0.42cm} {Evolutionary Biology and Preventing the Species Extinction}, \textit{7th National Environment and Ecology Student Congress}, Turkey, (2016). \\
+
+%-----------POSTER PRESENTATIONS-----------------
+%\section{Poster Presentations}
 \medskip
-\textbf{Isin Altinkaya}, Lei Zhao, Rasmus Nielsen, Thorfinn S. Korneliussen. A Genotype Likelihood Framework for Analysis of Molecular Variance (AMOVA) with Low Depth Sequencing Data. \\
-
+\textbf{Poster Presentations}
 \medskip
 
-Hugh McColl, Jos\'e Victor Moreno Mayar, \textbf{Isin Altinkaya}, Thorfinn Sand Korneliussen, Accurate and precise library complexity estimations for ancient DNA libraries using patterned flowcell technology. \\
+\textbf{[1]} \hspace{0.42cm} Damla Aygün, \textbf{Isin Altinkaya}, Murat Y{\i}lmaz, Ergi Deniz \"{O}zsoy, Efe Sezgin. Host genetics of microbiota diversity in \textit{Drosophila melanogaster}. \textit{Ecology and Evolutionary Biology Symposium}, Turkey, (2018). \\
+%i analysed Drosophila melanogaster microbial dataset to test the diversity using various diversity indices using R package named vegan
 
-Fulya Eylem Yediay et al. [et al, including \textbf{Isin Altinkaya}.]  Population genomics of Bronze Age Mediterranean. \\
 
+%-----------TEACHING EXPERIENCE------------
+
+\section{Teaching Experience}
+
+$\sbullet[.6]$ \hspace{0.74cm}  Advanced Bioinformatics for NGS, Graduate course, \textbf{Teaching Assistant}, University of Copenhagen, (2021). \\
+$\sbullet[.6]$ \hspace{0.74cm}  Introduction to Computational Biology and Bioinformatics, \textbf{Teaching Assistant}, Hacettepe University, (2020).\\
+$\sbullet[.6]$ \hspace{0.74cm}  Biometry, 4th year elective course, Hacettepe University, \textbf{Teaching Assistant}, (2019). \\
+%I worked as a teaching assistant and contributed by preparing exercises and teaching the basics of statistical analyses and visualization using R 
+$\sbullet[.6]$ \hspace{0.74cm}  Introductory Evolutionary Biology, Science and Utopia Magazine Evolution Courses, \textbf{Lecturer}, (2017). \\
+$\sbullet[.6]$ \hspace{0.74cm}  Introduction to Evolution, Hacettepe University Evolution Workshops, \textbf{Lecturer}, (2016). \\
 
 
 
 %-----------SELECTED SYMPOSIUM AND EVENTS------------
 %\section{Other Academic Achievements, Honors, and Activities}
 \section{Scientific Outreach, Public Engagement and Activities}
-12th Aykut Kence Evolution Conference, Organizer, \textit{2018} \\
-Science and Utopia Magazine, Popular science writer, Subject: Evolutionary biology, June 2017 - May 2018 \\
-Popular Science Magazine, Translator, February 2016 - May 2016 \\
-\href{https://evrimagaci.org/isinaltinkaya/}{Tree of Evolution}, Writer and editor; Subject: Evolutionary biology, November 2015 - present \\
-Turkey Meets Evolution: Izmir, Organizer, \textit{2012} \\
-Tree of Evolution Bornova Anatolian High School Evolution Workshop, Organizer, \textit{2012} \\
-\medskip
+
+Contributed to the organization of various free symposiums, workshops, and events focusing on teaching evolution and scientific thinking to the public, with a special focus on underdeveloped regions. \\
+
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  12th Aykut Kence Evolution Conference, \textbf{Organizer}, (2018). \\
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Science and Utopia Magazine, \textbf{Popular science writer}, Subject: Evolutionary biology, (June 2017 - May 2018). \\
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Popular Science Magazine, Turkey branch, \textbf{Popular science news editor and translator}, (February - May 2016). \\
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  \href{https://evrimagaci.org/isinaltinkaya/}{Tree of Evolution}, \textbf{Writer and editor}; Subject: Evolutionary biology, (November 2015 - present).\\
+Authored multiple popular science articles, which can be found at \href{https://evrimagaci.org/isinaltinkaya/}{evrimagaci.org/isinaltinkaya}.
+
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Turkey Meets Evolution: Izmir, \textbf{Organizer}, (2012). \\
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Tree of Evolution Bornova Anatolian High School Evolution Conference, \textbf{Organizer}, (2012). \\
+\smallskip
+
 %-----------POPULAR PUBLICATIONS------------
-%\section{Popular Science Publications (In Turkish)}
-\textbf{Popular Science Publications} \\
-Science and Utopia Magazine, Issue: 283, Examining the Thin Line Between Living and Non-Living Matter, with Dr. Martin Hanczyc \\
-Science and Utopia Magazine, Issue: 278, Education and Perceptions: Evolution in Turkey \\
-Atheist Magazine, Issue: 16, The Evolving Brain \\
-Atheist Magazine, Issue: 14, Evolutionary Perspectives on LGBTI+ \\
-Atheist Magazine, Issue: 13, Understanding Evolution through the Human Body \\
-Atheist Magazine, Issue: 12, Atheist Thinking under the Light of Evolution \\
-Popular science articles at the Evrim A\u{g}ac{\i} (Tree of Evolution) platform can be found at  \href{https://evrimagaci.org/isinaltinkaya/}{evrimagaci.org/isinaltinkaya}. 
+\textbf{Popular Science Publications in Magazines (in Turkish)}
 
 
+\medskip
 
+$\sbullet[.6]$ \hspace{0.74cm}  Science and Utopia Magazine, Issue: 283, Examining the thin line between living and non-living matter, co-authored with Martin Hanczyc.\\
+\smallskip
 
-%-----------TEACHING EXPERIENCE------------
+$\sbullet[.6]$ \hspace{0.74cm}  Science and Utopia Magazine, Issue: 278, Education and perceptions: Evolution in Turkey. \\
+\smallskip
 
-\section{Teaching Experience}
-Advanced Bioinformatics for Next-Generation Sequencing 2021, MSc course, University of Copenhagen, \textbf{Teaching Assistant}, \textit{2021} \\
-Introduction to Computational Biology and Bioinformatics Workshop, Hacettepe University, \textbf{Teaching Assistant}, \textit{2020} \\
-Biometry, 4th year elective course, Hacettepe University, \textbf{Teaching Assistant}, \textit{2019} \\
-%I worked as a teaching assistant and contributed by preparing exercises and teaching the basics of statistical analyses and visualization using R 
-Introductory Evolutionary Biology, Science and Utopia Magazine Evolution Courses, \textbf{Lecturer}, \textit{2017} \\
-Introduction to Evolution, Hacettepe University Evolution Workshops, \textbf{Lecturer}, \textit{2016} \\
+$\sbullet[.6]$ \hspace{0.74cm}  Atheist Magazine, Issue: 16, The evolving brain. \\
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Atheist Magazine, Issue: 14, Evolutionary biology and LGBTI+ in nature. \\
+\smallskip
+
+$\sbullet[.6]$ \hspace{0.74cm}  Atheist Magazine, Issue: 13, Understanding evolution through the human body. \\
+\smallskip
+
+%\textbf{[1]} \hspace{0.42cm} Atheist Magazine, Issue: 12, Atheist thinking under the light of evolution. \\
+%\smallskip
+
+\section{Open Source Contributions}
+
+\textbf{[10]} \hspace{0.42cm} \href{https://github.com/isinaltinkaya/gptchatteR}{gptchatteR} : An experimental R package for interacting with OpenAI GPT models in R. It provides a framework for using AI language models to help learning and conducting data analysis, plotting and data wrangling from R console. (2023). \\
+\smallskip
+
+\textbf{[9]} \hspace{0.42cm} \href{https://github.com/isinaltinkaya/google-slides_scripts}{gs\_scripts} : Custom scripts providing various additional functionalities to Google Slides (2022). \\
+\smallskip
+
+\textbf{[8]} \hspace{0.42cm} \href{https://github.com/isinaltinkaya/vcfgl}{vcfgl} : A tool for fast and efficient simulation of genotype likelihoods from VCF GT tags (2022). \\
+\smallskip
+
+\textbf{[7]} \hspace{0.42cm} \href{https://github.com/ANGSD/angsd}{ANGSD} : Actively contributing to the development and maintenance of the ANGSD software. (2021 - ongoing).\\
+\smallskip
+
+\textbf{[6]} \hspace{0.42cm} \href{https://github.com/isinaltinkaya/bash-functions}{bash-functions} : Custom functions designed for bashrc to perform various tasks, including runda (environment-safe wrapper for conda), treemd (format and print the tree structure of a git repository for markdown), lns (easy and safe wrapper for creating symbolic links) (2021).
+
+\textbf{[5]} \hspace{0.42cm} \href{https://github.com/isinaltinkaya/i3pomodoror}{i3pomodoror} : i3blocks wrapper for the R package pomodoror (2020). \\
+\smallskip
+
+\textbf{[4]} \hspace{0.42cm} \href{https://github.com/isinaltinkaya/PopulasyonBuyumesi}{PopulasyonBuyumesi} : An RShiny application for teaching population ecology, including population growth simulations and interactive plots. The RShiny app is available at \href{https://isinaltinkaya.shinyapps.io/PopulasyonBuyumesiSimulasyonlari/}{isinaltinkaya.shinyapps.io/PopulasyonBuyumesiSimulasyonlari/} (in Turkish), (2020).\\
+\smallskip
+
+\textbf{[3]} \hspace{0.42cm} \href{https://github.com/isinaltinkaya/cheatsheets}{cheatsheets} : Custom Markdown tutorials containing custom functions, examples, tips and tricks for using various tools and programming languages effectively, such as bash, git, jupyter, Make, conda and R (2020). \\
+\smallskip
+
+\textbf{[2]} \hspace{0.42cm} \href{https://github.com/SamueleSoraggi/HMMploidy}{HMMploidy} : A tool to calculate ploidy levels from genotype likelihoods and coverage using Hidden Markov Models. Contributed to the development of the open source software as a part of an academic project (see Publications/1), (2020).\\
+\smallskip
+
+\textbf{[1]} \hspace{0.42cm} \href{https://github.com/isinaltinkaya/i3gcalendar}{i3gcalendar} : Google Calendar i3blocks integration for i3wm (2018). \\
+\smallskip
 
 
 %-----------SCHOLARSHIPS & AWARDS---------------
 \section{Scholarships \& Awards}
-Erasmus+ Traineeship Grant, Imperial College London, \textit{2019} \\
-Hacktoberfest Award, for contributing to open source projects, \textit{2018 and 2019} \\
-Atheist Alliance International Foundation Scholarship for Students in Underdeveloped Countries, \textit{2016 and 2017} \\
+\textbf{[5]} \hspace{0.42cm} Erasmus+ Traineeship Grant, Imperial College London, (2019). \\
+\textbf{[4]} \hspace{0.42cm} Hacktoberfest Award, for contributing to open source projects, (2019). \\
+\textbf{[3]} \hspace{0.42cm} Hacktoberfest Award, for contributing to open source projects, (2018). \\
+\textbf{[2]} \hspace{0.42cm} Atheist Alliance International Foundation Scholarship for Students in Underdeveloped Countries, (2017). \\
+\textbf{[1]} \hspace{0.42cm} Atheist Alliance International Foundation Scholarship for Students in Underdeveloped Countries, (2016). \\
 
 %-----------SOCIETY MEMBERSHIPS-----------------
 %Society Memberships
