@@ -56,7 +56,14 @@
     urlcolor = blue,
 }
 
-    
+\usepackage{tikz}
+\newcommand{\pie}[1]{%
+    \begin{tikzpicture}[scale=0.15]
+        \draw (0,0) circle (1);
+        \fill[black] (0,0) -- (0:1) arc (0:#1:1) -- cycle;
+    \end{tikzpicture}
+}
+
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
@@ -118,15 +125,21 @@
 \hfill \begin{Huge} Isin Altinkaya \end{Huge} \\
 \color{black}
 
-\href {https://github.com/isinaltinkaya}{GitHub/isinaltinkaya} 
-\hfill Oester Voldgade 5-7, 1350 \\
-
-\href {https://x.com/IsinAltinkaya}{X(Twitter)/isinaltinkaya}
+\href {https://github.com/isinaltinkaya}{$\vcenter{\hbox{\includegraphics[scale=0.04]{icons/github_PNG23.png}/isinaltinkaya}}$} \hfill Oester Voldgade 5-7, 1350 \\
+\href {https://x.com/IsinAltinkaya}{$\vcenter{\hbox{\includegraphics[scale=0.04]{icons/Twitter_and_X_logos.png}}}$/isinaltinkaya}
 \hfill Copenhagen K, Denmark \\
+\href{mailto:isinaltinkaya@gmail.com}{isinaltinkaya@gmail.com} $\sbullet[.5]$ \href{mailto:isin.altinkaya@sund.ku.dk}{isin.altinkaya@sund.ku.dk} \hfill \href{https://scholar.google.com/citations?user=DHpwS6oAAAAJ&hl=en&oi=ao}{$\vcenter{\hbox{\includegraphics[scale=0.08]{icons/google-scholar_orig_full.png}}}$} $\sbullet[.5]$
+\href{https://orcid.org/0000-0002-6364-3332}{$\vcenter{\hbox{\includegraphics[scale=0.08]{icons/orcid-orig_full.png}}}$} $\sbullet[.5]$ 
+\href{https://www.linkedin.com/in/altinkayaisin/}{$\vcenter{\hbox{\includegraphics[scale=0.08]{icons/linkedin-orig-full.png}}}$}
 
-\href{mailto:isinaltinkaya@gmail.com}{isinaltinkaya@gmail.com} $\sbullet[.5]$ \href{mailto:isin.altinkaya@sund.ku.dk}{isin.altinkaya@sund.ku.dk} 
-\hfill \href{https://scholar.google.com/citations?user=DHpwS6oAAAAJ&hl=en&oi=ao}{Google Scholar} $\sbullet[.5]$ \href{https://orcid.org/0000-0002-6364-3332}{ORCID}\orcidlink{0000-0002-6364-3332} $\sbullet[.5]$ 
-\href{https://www.linkedin.com/in/altinkayaisin/}{LinkedIn} \\
+
+% \href {https://github.com/isinaltinkaya}{GitHub/isinaltinkaya} 
+% \hfill Oester Voldgade 5-7, 1350 \\
+% \href {https://x.com/IsinAltinkaya}{X(Twitter)/isinaltinkaya}
+% \hfill Copenhagen K, Denmark \\
+% \href{mailto:isinaltinkaya@gmail.com}{isinaltinkaya@gmail.com} $\sbullet[.5]$ \href{mailto:isin.altinkaya@sund.ku.dk}{isin.altinkaya@sund.ku.dk} \hfill \href{https://scholar.google.com/citations?user=DHpwS6oAAAAJ&hl=en&oi=ao}{\includegraphics[scale=0.08]{icons/google-scholar_orig_full.png}} $\sbullet[.5]$
+% \href{https://orcid.org/0000-0002-6364-3332}{{\includegraphics[scale=0.08]{icons/orcid-orig_full.png}} $\sbullet[.5]$ 
+% \href{https://www.linkedin.com/in/altinkayaisin/}{\includegraphics[scale=0.07]{icons/linkedin-orig-full.png}}}
 
 
 
@@ -153,6 +166,7 @@
   \cvSubHeadingListEnd
 
 %    \quad GPA: 3.23, \quad Certificate No: 20-321-032
+\vspace{-1.5em}
 
 %-----------RESARCH EXPERIENCE-----------------
 \section{Research Experience}
@@ -166,7 +180,7 @@
           \vspace{-0.1em} \begin{enumerate}[label=\textbf{-},nosep,wide,  labelindent=0pt]
         \item Collaborated with Ida Moltke on a research project on IBD segment identification with low-depth sequencing data.
     \end{enumerate}
-
+\vspace{0.4em}
         \cvSubheading
         {PhD Fellow}
         {University of Copenhagen, Denmark}
@@ -255,12 +269,12 @@
 \section{Publications}
 
 \begin{flalign*}
-\href{https://www.biorxiv.org/content/10.1101/2024.12.02.626332v1}{\textbf{[6]}} &\; \text{Fulya E. Yediay [et al, including \textbf{Isin Altinkaya}]. Ancient genomics support deep divergence between} && \\
-&\; \text{Eastern and Western Mediterranean Indo-European languages. (under review by \textit{Nature}). \textit{bioRxiv} (2024).} && \\
-\href{https://doi.org/10.1101/2024.04.09.586324 }{\textbf{[5]}} &\; \text{\textbf{Isin Altinkaya}, Thorfinn S. Korneliussen, Rasmus Nielsen. vcfgl: A flexible genotype likelihood simulator} && \\ 
-&\; \text{for VCF/BCF files. (under review by \textit{Bioinformatics}). \textit{bioRxiv} (2024).} \\ 
+\href{https://www.biorxiv.org/content/10.1101/2024.12.02.626332v1}{\textbf{[6]}} &\; \text{Fulya E. Yediay [et al, including \textbf{Isin Altinkaya}]. Ancient genomics support deep divergence between Eastern and} && \\
+&\; \text{Western Mediterranean Indo-European languages. (under review by \textit{Nature}). \textit{bioRxiv} (2024).} && \\
+\href{https://doi.org/10.1101/2024.04.09.586324 }{\textbf{[5]}} &\; \text{\textbf{Isin Altinkaya}, Thorfinn S. Korneliussen, Rasmus Nielsen. vcfgl: A flexible genotype likelihood simulator for} && \\ 
+&\; \text{VCF/BCF files. (under review by \textit{Bioinformatics}). \textit{bioRxiv} (2024).} \\ 
 \href{https://doi.org/10.1101/2024.03.13.584607}{\textbf{[4]}} &\; \text{Hugh McColl [et al, including \textbf{Isin Altinkaya}]. Steppe Ancestry in western Eurasia and the spread of the Germanic} \\ 
-&\; \text{Languages. \textit{bioRxiv} (2024).} && \\
+&\; \text{Languages. (under review by \textit{Nature}). \textit{bioRxiv} (2024).} && \\
 \href{https://doi.org/10.1038/s41586-023-06865-0}{\textbf{[3]}} &\;  \text{Morten E. Allentoft [et al, including \textbf{Isin Altinkaya}]. {Population genomics of post-glacial western Eurasia}. \textit{Nature}} \\ 
 &\; \text{(2024).} && \\
 \href{https://doi.org/10.24072/pcjournal.178}{\textbf{[2]}} &\; \text{Samuele Soraggi, Johanna Rhodes, \textbf{Isin Altinkaya}, Oliver Tarrant, François Balloux, Matthew C. Fisher, Matteo} && \\
@@ -270,7 +284,7 @@
 &\; \text{high-throughput sequencing data. \textit{GigaScience} (2022).} 
 \end{flalign*}
 
-\smallskip \vspace{-0.2em}
+\smallskip \vspace{-0.4em}
 
 \textbf{Manuscripts in Preparation}\vspace{-0.5em}
 \begin{flalign*}
@@ -280,11 +294,12 @@
 &\; \text{of IBD segments in low- and medium-depth genomic data without phasing.} && \\
 \textbf{[1]} &\; \text{\textbf{Isin Altinkaya}, Emrullah Y{\i}lmaz, {\.{I}}smail K. Sa{\u{g}}lam, Bar{\i}\c{s} \"{O}z\"{u}do\u{g}ru. Understanding the phylogenetic relationships} && \\ 
 &\; \text{within the \textit{Noccaea} species complex from RADSeq data using the multi-species coalescent.} && \\ 
-\end{flalign*} \vspace{-3em}
+\end{flalign*} \vspace{-4em}
 
 
 %-----------PROFESSIONAL EXPERIENCE-----------------
 \section{Professional Experience}
+\smallskip
   \cvSubHeadingListStart
     \cvSubheading
       {Freelance Programmer}{Remote}
@@ -299,11 +314,23 @@
 
 
 %--------SKILLS------------
+
 \section{Skills}
-\textbf{Programming languages}: C (advanced), C++ (intermediate), R (advanced), Python (advanced), Java (advanced beginner), Perl (advanced beginner), Rust (advanced beginner) \\
+
+%B (Beginner); AB (Advanced Beginner); I (Intermediate); A (Advanced); E (Expert)\\
+%$\overset{\text{E}}{\text{C}},\ \overset{\text{E}}{\text{R}},\ \overset{\text{A}}{\text{Python}},\ \overset{\text{I}}{\text{C++}},\ \overset{\text{I}}{\text{Perl}},\ \overset{\text{I}}{\text{Rust}},\ \overset{\text{B}}{\text{Java}}$ \\
+\textbf{Programming languages}:
+$\overset{\textcolor{isored}{\text{   Expert   }}}{\text{C}},\ \overset{\textcolor{isored}{\text{   Expert   }}}{\text{R}},\
+\overset{\textcolor{isored}{\text{  Advanced  }}}{\text{Python}},\ \overset{\textcolor{isored}{\text{  Advanced  }}}{\text{C++}},\
+\overset{\textcolor{isored}{\text{Intermediate}}}{\text{Rust}},\
+\overset{\textcolor{isored}{\text{Intermediate}}}{\text{Perl}},\  
+\overset{\textcolor{isored}{\text{  Beginner  }}}{\text{Java}}$ \\
+\smallskip
 \textbf{Scripting and typesetting}: \LaTeX, Markdown, HTML\&CSS, JavaScript, Google Apps Script, sed, AWK, Bash \\
+\smallskip
 \textbf{Operating systems}: GNU/Linux (including server administration and HPC environments) \\
-\textbf{Other tools and frameworks}: Git,  Conda/Bioconda, Snakemake, RShiny, Dash, Django, Make \\
+\smallskip
+\textbf{Other tools and frameworks}: Git,  Conda/Bioconda, Snakemake, RShiny, Dash, Django, Make \smallskip
 
 
 % %-----------SELECTED COURSES-----------------
@@ -363,9 +390,9 @@
 
 %-----------SELECTED SYMPOSIUM AND EVENTS------------
 %\section{Other Academic Achievements, Honors, and Activities}
-\section{Scientific Outreach, Public Engagement and Activities}
+\section{Scientific Outreach, Public Engagement, and Activities}
 
-Contributed to the organization of various free symposiums, workshops, and events focusing on teaching evolution and scientific thinking to the public, with a special focus on underdeveloped regions. \\
+Contributed to organizing various free symposiums, workshops, and events focusing on teaching evolution and scientific thinking to the public, with a special focus on underdeveloped regions. \\
 
 \smallskip
 
@@ -406,37 +433,37 @@ Authored multiple popular science articles, which can be found at \href{https://
 %\smallskip
 
 \section{Open Source Projects and Contributions}
-\textbf{-}   \href{https://github.com/isinaltinkaya/ngsAMOVA}{ngsAMOVA}:A tool designed to perform AMOVA, $d_{xy}$, Neighbor-Joining, and IBD segment detection from NGS data in a probabilistic framework (see Publications/Manuscripts in Preparation). (2022 - present).  \\
+\textbf{-}   \href{https://github.com/isinaltinkaya/ngsAMOVA}{ngsAMOVA}: A \textbf{C/C++} tool designed to perform AMOVA, $d_{xy}$, Neighbor-Joining, and IBD segment detection from NGS data in a probabilistic framework (see Publications/Manuscripts in Preparation). (2022 - present).  \\
 \smallskip
-\textbf{-}  \href{https://github.com/isinaltinkaya/gptchatteR}{gptchatteR}: An experimental R package wrapper for interacting with OpenAI LLM models in R console, providing a framework for using AI language models to help learning and conducting data analysis, data visualization and wrangling directly from R console. (2023). \\
-\smallskip
-
-\textbf{-}  \href{https://github.com/isinaltinkaya/google-slides_scripts}{google-slides\_scripts}: Custom scripts providing various additional functionalities to Google Slides. (2022). \\
+\textbf{-}  \href{https://github.com/isinaltinkaya/gptchatteR}{gptchatteR}: An \textbf{R} package and wrapper for interacting with \textbf{OpenAI LLM models} in R console, providing a framework for using AI language models to help learning and conducting data analysis, data visualization and wrangling directly from R console. (2023). \\
 \smallskip
 
-\textbf{-}  \href{https://github.com/isinaltinkaya/vcfgl}{vcfgl}: A tool for fast and efficient simulation of genotype likelihoods (see Publications/5). (2022). \\
+\textbf{-}  \href{https://github.com/isinaltinkaya/google-slides_scripts}{google-slides\_scripts}: Custom scripts written using \textbf{Google Apps Script} providing various additional functionalities to Google Slides. (2022). \\
 \smallskip
 
-\textbf{-}  \href{https://github.com/ANGSD/angsd}{ANGSD}: Actively contributed to the development and maintenance of the ANGSD software (2021-2024).\\
+\textbf{-}  \href{https://github.com/isinaltinkaya/vcfgl}{vcfgl}: A \textbf{C/C++} tool for fast and efficient simulation of genotype likelihoods (see Publications/5). (2022-present). \\
 \smallskip
 
-\textbf{-}  \href{https://github.com/isinaltinkaya/bash-functions}{bash-functions}: Custom bash functions designed to perform various tasks, including runda (environment-safe wrapper for conda), treemd (format and print the tree structure of a git repository in MD format) (2021).
+\textbf{-}  \href{https://github.com/ANGSD/angsd}{ANGSD}: \textbf{C/C++} toolkit for analyzing next-generation sequencing data. Actively contributed to the development and maintenance of the ANGSD software (2021-2024).\\
 \smallskip
 
-\textbf{-}  \href{https://github.com/isinaltinkaya/i3pomodoror}{i3pomodoror}: i3 window manager wrapper for the R library 'pomodoror' (2020). \\
+\textbf{-}  \href{https://github.com/isinaltinkaya/bash-functions}{bash-functions}: Custom \textbf{Bash} functions for performing various tasks, such as 'runda', an environment-safe wrapper for \textbf{conda}, and 'treemd' for printing the tree structure of a \textbf{Git} repository in \textbf{Markdown} format. (2021-present).
 \smallskip
 
-\textbf{-}  \href{https://github.com/isinaltinkaya/PopulasyonBuyumesi}{PopulasyonBuyumesi}: An RShiny application for teaching population ecology through including population growth simulations and interactive plots. The RShiny app (in Turkish) is  available at \href{ PopulasyonBuyumesiSimulasyonlari.isinaltinkaya.com/}{isinaltinkaya.shinyapps.io/PopulasyonBuyumesiSimulasyonlari}, (2020).\\
+\textbf{-}  \href{https://github.com/isinaltinkaya/i3pomodoror}{i3pomodoror}: i3 window manager wrapper (using \textbf{Bash}) for the R library 'pomodoror' (2020). \\
 \smallskip
 
-\textbf{-}  \href{https://github.com/isinaltinkaya/cheatsheets}{cheatsheets}: Custom Markdown tutorials containing custom functions, examples, and tips for using various tools and programming languages effectively, such as Bash, Git, Jupyter, Make, Conda/Bioconda and R (2020). \\
+\textbf{-}  \href{https://github.com/isinaltinkaya/PopulasyonBuyumesi}{PopulasyonBuyumesi}: An \textbf{RShiny} application for teaching population ecology through including population growth simulations and interactive plots. The RShiny app (in Turkish) is available at \href{popbsim.isinaltinkaya.com/}{popbsim.isinaltinkaya.com}, (2020).\\
 \smallskip
 
-\textbf{-}  \href{https://github.com/SamueleSoraggi/HMMploidy}{HMMploidy}: A tool to calculate ploidy levels from genotype likelihoods and coverage using Hidden Markov Models. Contributed to the development of the open source software as a part of an academic project (see Publications/2), (2020).\\
+\textbf{-}  \href{https://github.com/isinaltinkaya/cheatsheets}{cheatsheets}: Custom \textbf{Markdown} tutorials containing custom functions, examples, and tips for using various tools and programming languages effectively, such as \textbf{Bash}, \textbf{Git}, \textbf{Jupyter}, \textbf{Make}, \textbf{Conda/Bioconda} and \textbf{R} (2020-present). \\
 \smallskip
 
-\textbf{-}  \href{https://github.com/isinaltinkaya/i3gcalendar}{i3gcalendar}: Google Calendar i3blocks integration for i3 window manager (2018). \\
+\textbf{-}  \href{https://github.com/SamueleSoraggi/HMMploidy}{HMMploidy}: A \textbf{Python} tool to calculate ploidy levels from genotype likelihoods and coverage using Hidden Markov Models. Contributed to the development as a part of an academic project (see Publications/2), (2020).\\
 \smallskip
+
+\textbf{-}  \href{https://github.com/isinaltinkaya/i3gcalendar}{i3gcalendar}: Google Calendar i3blocks integration (written in \textbf{Python}) for i3 window manager  (2018). \\
+\vspace{-0.8em}
 
 %-----------SCHOLARSHIPS & AWARDS---------------
 \section{Scholarships \& Awards}
@@ -459,6 +486,7 @@ Authored multiple popular science articles, which can be found at \href{https://
 \textbf{-} Society for the Study of Evolution, \textit{2021 - present} \\
 \textbf{-} Free Software Foundation, \textit{2020 - present} \\
 \textbf{-} Ecology and Evolutionary Biology Society of Turkey, \textit{2017 - present} \\
+\vspace{-0.8em}
 
  
 %-----------LANGUAGE-----------------
@@ -468,6 +496,7 @@ Authored multiple popular science articles, which can be found at \href{https://
     \textbf{-}  \textbf{English:} Native-like fluency (ILR level R-$5$, S-$4+$, L-$5$, W-$5$) \\
     \textbf{-}  \textbf{German:} Elementary proficiency (ILR level R-$1$, S-$0+$, L-$0$, W-$0+$) \\
     \textbf{-}  \textbf{Danish:} Elementary proficiency (ILR level R-$1$, S-$0+$, L-$0+$, W-$1$) \\
+\vspace{-0.8em}
 
 %-----------REFERENCES-----------------
 \section{References}
