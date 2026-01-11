@@ -1,0 +1,191 @@
+
+%-------------------------
+% Author : Isin Altinkaya
+% Website: https://github.com/isinaltinkaya/cv
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{bold-extra}
+\usepackage[utf8]{inputenc}  % input encoding
+\usepackage{mathtools} % align text
+
+%icons
+\usepackage{orcidlink}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+\usepackage{xcolor}
+\definecolor{isored}{HTML}{980000}
+
+
+% \newcommand\ytl[2]{
+% \parbox[b]{8em}{\hfill{\color{cyan}\bfseries\sffamily #1}~$\cdots\cdots$~}\makebox[0pt][c]{$\bullet$}\vrule\quad \parbox[c]{4.5cm}{\vspace{7pt}\color{red!40!black!80}\raggedright\sffamily #2.\\[7pt]}\\[-3pt]}
+% \begin{table}
+% \ytl{1947}{AT and T Bell Labs develop the idea of cellular phones}
+% \ytl{1968}{Xerox Palo Alto Research Centre envisage the `Dynabook'}
+% \ytl{1971}{Busicom 'Handy-LE' Calculator}
+% \ytl{1973}{First mobile handset invented by Martin Cooper}
+% \ytl{1978}{Parker Bros. Merlin Computer Toy}
+% \ytl{1981}{Osborne 1 Portable Computer}
+% \ytl{1982}{Grid Compass 1100 Clamshell Laptop}
+% \ytl{1983}{TRS-80 Model 100 Portable PC}
+% \ytl{1984}{Psion Organiser Handheld Computer}
+% \ytl{1991}{Psion Series 3 Minicomputer}
+% \end{table}
+
+
+\usepackage[pdftex]{hyperref}
+
+\hypersetup{
+    colorlinks = true,
+    linkcolor = blue,
+    anchorcolor = blue,
+    citecolor = blue,
+    filecolor = blue,
+    urlcolor = blue,
+}
+
+\usepackage{tikz}
+\newcommand{\pie}[1]{%
+    \begin{tikzpicture}[scale=0.15]
+        \draw (0,0) circle (1);
+        \fill[black] (0,0) -- (0:1) arc (0:#1:1) -- cycle;
+    \end{tikzpicture}
+}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\scshape\raggedright\large\color{isored}
+}{}{1em}{}[\color{isored}{\titlerule} \vspace{-3pt}]
+
+% Custom commands
+\newcommand{\cvItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\cvSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{3pt} \\
+    #5
+}
+
+\newcommand{\cvSubItem}[2]{\cvItem{#1}{#2}\vspace{-4pt}}
+
+%\renewcommand{\labelitemii}{$\circ$}
+%\renewcommand{\labelitemii}{$\rightarrow$}
+
+
+\newcommand{\cvSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\cvSubHeadingListEnd}{\end{itemize}}
+\newcommand{\cvItemListStart}{\begin{itemize}}
+\newcommand{\cvItemListEnd}{\end{itemize}\vspace{-5pt}}
+%
+%\newcommand\textline[4][t]{%
+%  \par\smallskip\noindent\parbox[#1]{.333\textwidth}{\raggedright\texttt#2}%
+%  \parbox[#1]{.333\textwidth}{\centering#3}%
+%  \parbox[#1]{.333\textwidth}{\raggedleft\texttt{#4}}\par\smallskip%
+%}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\href{http://isinaltinkaya.com/}{isinaltinkaya.com} 
+\color{isored}
+\hfill \begin{Huge} Isin Altinkaya \end{Huge} \\
+\color{black}
+
+\href {https://github.com/isinaltinkaya}{$\vcenter{\hbox{\includegraphics[scale=0.04]{icons/github_PNG23.png}/isinaltinkaya}}$} \hfill Oester Voldgade 5-7, 1350 \\
+\href {https://x.com/IsinAltinkaya}{$\vcenter{\hbox{\includegraphics[scale=0.04]{icons/Twitter_and_X_logos.png}}}$/isinaltinkaya}
+\hfill Copenhagen K, Denmark \\
+\href{mailto:isinaltinkaya@gmail.com}{isinaltinkaya@gmail.com} $\sbullet[.5]$ \href{mailto:isin.altinkaya@sund.ku.dk}{isin.altinkaya@sund.ku.dk} \hfill \href{https://scholar.google.com/citations?user=DHpwS6oAAAAJ&hl=en&oi=ao}{$\vcenter{\hbox{\includegraphics[scale=0.08]{icons/google-scholar_orig_full.png}}}$} $\sbullet[.5]$
+\href{https://orcid.org/0000-0002-6364-3332}{$\vcenter{\hbox{\includegraphics[scale=0.08]{icons/orcid-orig_full.png}}}$} $\sbullet[.5]$ 
+\href{https://www.linkedin.com/in/isinaltinkaya/}{$\vcenter{\hbox{\includegraphics[scale=0.08]{icons/linkedin-orig-full.png}}}$}
+
+
+% \href {https://github.com/isinaltinkaya}{GitHub/isinaltinkaya} 
+% \hfill Oester Voldgade 5-7, 1350 \\
+% \href {https://x.com/IsinAltinkaya}{X(Twitter)/isinaltinkaya}
+% \hfill Copenhagen K, Denmark \\
+% \href{mailto:isinaltinkaya@gmail.com}{isinaltinkaya@gmail.com} $\sbullet[.5]$ \href{mailto:isin.altinkaya@sund.ku.dk}{isin.altinkaya@sund.ku.dk} \hfill \href{https://scholar.google.com/citations?user=DHpwS6oAAAAJ&hl=en&oi=ao}{\includegraphics[scale=0.08]{icons/google-scholar_orig_full.png}} $\sbullet[.5]$
+% \href{https://orcid.org/0000-0002-6364-3332}{{\includegraphics[scale=0.08]{icons/orcid-orig_full.png}} $\sbullet[.5]$ 
+% \href{https://www.linkedin.com/in/altinkayaisin/}{\includegraphics[scale=0.07]{icons/linkedin-orig-full.png}}}
+
+
+
+%I\c{s}{\i}n Alt{\i}nkaya
+\section{Cover letter}
+
+\begin{flushleft}
+\medskip
+Dear Hiring Committee,\\
+\vskip 0.2in
+
+I am writing to express my interest in the Genomics Data Analyst position at the SNSB Genomics Core Facility. With a Ph.D. in Bioinformatics and Computational Evolutionary Genomics from the Geogenetics Section at the Globe Institute, University of Copenhagen (expected March 2025), I have developed a strong foundation in computational biology, scientific software development, and developing efficient computational pipelines for high-performance computing. I am eager to apply my expertise to support the SNSB's mission of advancing geo- and biodiversity research.
+
+\medskip
+
+As a Ph.D. researcher, I have developed advanced algorithms and software to analyze NGS data and gain meaningful evolutionary and population genetic insights, with a focus on efficiency and scalability. Notably, I authored several publications where I implement advanced statistical methods into fast, efficient and user-friendly software. I believe my academic research output exemplifies my ability to design robust computational solutions addressing genomic data complexities. My technical expertise includes C, C++, Python, R and Bash, as well as experience with Linux/Unix environments. I have extensive experience in developing workflows and tools for sequence data analysis, utilizing container technologies such as Docker and workflow engines such as Nextflow and Snakemake.
+
+\medskip
+
+At the GeoGenetics Center, I had the opportunity to collaborate with multidisciplinary teams, which resulted in multiple high-impact publications and has honed my ability to derive biological insights from data. I played a key role in the development and optimization of the main bioinformatics pipeline, which processed large-scale raw NGS data. This experience allowed me to work extensively with quality control and population genomic analyses, ensuring that genomic analyses were both accurate and efficient. I also collaborated closely with the technical team at Illumina and worked with raw data to integrate new sequencing technologies into our workflows. This hands-on experience with cutting-edge sequencing technologies, pipeline development, and interdisciplinary collaboration has equipped me with the skills to tackle complex genomic challenges and drive innovation in phylogenomic and evolutionary research.
+
+\medskip
+
+My passion for phylogenomics stems from my deep interest in reconstructing evolutionary relationships and understanding the genomic architecture of species through high-throughput sequencing data. During my PhD, I developed ngsAMOVA, a probabilistic framework for molecular variance analysis, phylogenetic tree construction, and dXY estimation from low-depth sequencing data During my undergraduate studies, I conducted an internship at the Biogeography Research Lab, where I developed a Snakemake pipeline for phylogenomic analyses of the Noccaea species complex. This experience allowed me to gain hands-on expertise with modern phylogenomic tools such as RAxML, IQ-TREE, ASTRAL, and BEAST, enabling me to tackle complex questions in evolutionary relationships, species divergence, and phylogenetic reconstruction. Additionally, I attended a RevBayes workshop, where I gained experience in tree inference from molecular data, evaluating MCMC performance, assessing model adequacy, and conducting macroevolutionary analyses.
+
+\medskip
+
+My expertise goes beyond merely utilizing existing tools; I have actively designed and implemented novel algorithms and frameworks to address the intricate challenges of genomic data analysis, ensuring both precision and computational efficiency. This experience has provided me with a deep understanding of the complexities inherent in bioinformatics, enabling me to critically assess data, optimize analytical workflows, and rigorously evaluate results.
+
+\medskip
+
+Additionally, I studied German as my secondary foreign language during high school, which provided me with a foundational understanding of the language. While I am not yet at a conversational level, I am highly motivated to improve my German proficiency and am committed to developing my language skills further. I am confident that within a short period, I can reach a level where I can also communicate in German at work. I am eager to immerse myself in a German-speaking environment and take advantage of opportunities to enhance my fluency.
+
+\medskip
+
+I would like to disclose that I have a disability that is classified as a severe disability under German law. I have attached the relevant documentation as proof of my degree of disability. However, this does not impact my dedication or ability to excel in my professional role. I am fully committed to performing at the highest level in my professional role and have consistently demonstrated my ability to contribute effectively in research and computational projects.
+
+\medskip
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences align with the goals of the SNSB Genomics Core Facility.
+
+
+\vskip 0.2in
+Best regards,\\
+Isin Altinkaya
+
+\end{flushleft}
+
+\end{document}  
